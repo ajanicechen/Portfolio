@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-image: url(https://wallpaperaccess.com/full/628286.jpg);
 }
 
 /* .contentCard{
@@ -11,8 +12,15 @@ body{
     min-width: 500px;
 }
 
+#card{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
 .contentCard{
     width: 30%;
+    display: flex;
+    margin-top: 5%;
 }
 
 .pfp{
@@ -62,6 +70,7 @@ hr{
     padding: 0 15px;
     border-radius: 20px;
     background-color: #B06270;
+    transition: all 0.2s linear;
 }
 
 .navBtn:hover{
@@ -82,19 +91,22 @@ hr{
     text-transform: lowercase;
     margin-bottom: 0;
     cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
 }
-
 
 .contactIcon{
     border: 1px solid;
     border-radius: 50%;
     padding: 30px 17px;
-    color: #C8CCCF;
+    color: #bbbbbb;
     text-decoration: none;
+    transition: all 0.2s linear;
 }
 
 .contactIcon:hover{
     color: #B06270;
+    transition: all 0.2s linear;
 }
 
 .hidden{
@@ -135,4 +147,22 @@ hr{
     .navBtn{
         display: block;
     }
-  }
+
+    #card{
+        border: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .contentCard{
+        width: 80%;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .navBtn{
+        display: block;
+    }
+}
