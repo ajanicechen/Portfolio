@@ -11,13 +11,23 @@ body{
     min-width: 500px;
 }
 
+.contentCard{
+    width: 30%;
+}
+
 .pfp{
     border-radius: 50%;
     margin-bottom: 25px;
-    height: 200px;
+    height: 40%;
+    width: 40%;
 }
 
 .contCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
     display: flex;
     justify-content: center;
 }
@@ -94,3 +104,35 @@ hr{
 .progrBar{
     margin-bottom: 10px;
 }
+
+#progress-bar[value]{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#progress-bar[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(88, 88, 88, 0.25) inset;
+}
+
+#progress-bar[value]::-webkit-progress-value {
+    background-color: #B06270;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(88, 88, 88, 0.25) inset;
+}
+
+@media (min-width: 0) and (max-width: 1024px) {
+    .contentCard{
+        width: 100%;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .navBtn{
+        display: block;
+    }
+  }

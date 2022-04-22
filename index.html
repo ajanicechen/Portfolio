@@ -18,7 +18,7 @@
 <body>
     <!-- Card -->
     <card class="contentCard card">
-        <div class="card-body cardW500">
+        <div class="card-body">
             <div id="contentContainer">
                 <div id="homeSection">
                     <h1 class="name contCenter">Annie Chen</h1>
@@ -43,36 +43,25 @@
     
                 <div class="hidden" id="skillsSection">
                     <h1 class="name contCenter">Skills</h1>
+
                     <div class="post">
-                        <p>HTML 5</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>HTML 5</label>
+                        <progress id="progress-bar" value="85" max="100"></progress>
     
-                        <p>CSS 3</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>CSS 3</label>
+                        <progress id="progress-bar" value="75" max="100"></progress>
     
-                        <p>JavaScript</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>JavaScript</label>
+                        <progress id="progress-bar" value="75" max="100"></progress>
 
-                        <p>TypeScript</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>TypeScript</label>
+                        <progress id="progress-bar" value="60" max="100"></progress>
 
-                        <p>React</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>React</label>
+                        <progress id="progress-bar" value="60" max="100"></progress>
     
-                        <p>PHP</p>
-                        <div class="progress progrBar">
-                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <label>PHP</label>
+                        <progress id="progress-bar" value="60" max="100"></progress>
                     </div>
                 </div>
 
@@ -94,19 +83,6 @@
                 <div class="contCenter">
                     <nav class="navbar">
                         <div class="row align-items-start">
-                            <!-- <div class="col navBtn">
-                                <a href="/">Home</a>
-                            </div>
-                            <div class="col navBtn" id="aboutBtn">
-                                <a href="/about.html">About</a>
-                            </div>
-                            <div class="col navBtn">
-                                <a href="#skills">Skills</a>
-                            </div>
-                            <div class="col navBtn">
-                                <a href="#work">Work</a>
-                            </div> -->
-
                             <div class="col navBtn" id="homeBtn" onclick="changeContent(this.id)">
                                 <p class="buttons">home</p>
                             </div> 
@@ -119,10 +95,27 @@
                             <div class="col navBtn" id="portfolioBtn" onclick="changeContent(this.id)">
                                 <p class="buttons">portfolio</p>
                             </div> 
-
                           </div>
                     <nav>
                 </div>
+
+                <!-- <div class="">
+                    <nav class="navbar">
+                        <div class="navBtn" id="homeBtn" onclick="changeContent(this.id)">
+                             <p class="buttons">home</p>
+                        </div> 
+                        <div class="navBtn" id="aboutBtn" onclick="changeContent(this.id)">
+                            <p class="buttons">about</p>
+                        </div> 
+                        <div class="navBtn" id="skillsBtn" onclick="changeContent(this.id)">
+                            <p class="buttons">skills</p>
+                        </div> 
+                        <div class="navBtn" id="portfolioBtn" onclick="changeContent(this.id)">
+                            <p class="buttons">portfolio</p>
+                        </div> 
+                    <nav>
+                </div> -->
+
                 <div class="contCenter">
                     <nav class="navbar">
                         <div class="row align-items-start">
