@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+/* .contentCard{
+    margin-top: 100px;
+} */
+
+.cardW500{
+    min-width: 500px;
+}
+
+card div img{
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.contCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-family: 'Pacifico', cursive;
+    margin: 25px 0;
+    color: #B06270
+}
+
+.post{
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 25px 0;
+}
+
+card div p{
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+hr{
+    width: 25%;
+}
+
+.navBtn{
+    margin: 25px 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #B06270;
+}
+
+.navBtn:hover{
+    background-color: #e48a9a;
+}
+
+.navBtn a, .navBtn a:hover{
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.contactIcon{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 30px 17px;
+    color: #C8CCCF;
+    text-decoration: none;
+}
+
+.contactIcon:hover{
+    color: #B06270;
+}
