@@ -11,9 +11,10 @@ body{
     min-width: 500px;
 }
 
-card div img{
+.pfp{
     border-radius: 50%;
     margin-bottom: 25px;
+    height: 200px;
 }
 
 .contCenter{
@@ -27,14 +28,15 @@ card div img{
     color: #B06270
 }
 
-.post{
+.subTitle{
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 25px 0;
+    text-align: center;
 }
 
-card div p{
+card div .post{
     text-align: center;
     margin: 0 10px;
     margin-bottom: 25px;
@@ -47,7 +49,7 @@ hr{
 
 .navBtn{
     margin: 25px 10px;
-    padding: 5px 20px;
+    padding: 0 15px;
     border-radius: 20px;
     background-color: #B06270;
 }
@@ -56,12 +58,22 @@ hr{
     background-color: #e48a9a;
 }
 
-.navBtn a, .navBtn a:hover{
+/* .navBtn a, .navBtn a:hover{
     color: white;
     padding: 5px 15px;
     text-decoration: none;
     text-transform: lowercase;
+} */
+
+.navBtn p, .navBtn p:hover{
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+    margin-bottom: 0;
+    cursor: pointer;
 }
+
 
 .contactIcon{
     border: 1px solid;
@@ -73,4 +85,12 @@ hr{
 
 .contactIcon:hover{
     color: #B06270;
+}
+
+.hidden{
+    display: none;
+}
+
+.progrBar{
+    margin-bottom: 10px;
 }

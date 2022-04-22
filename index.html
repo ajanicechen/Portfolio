@@ -19,23 +19,124 @@
     <!-- Card -->
     <card class="contentCard card">
         <div class="card-body cardW500">
-            <h1 class="name contCenter">Annie Chen</h1>
-            <div class="contCenter">
-                <img src="https://acnhcdn.com/latest/NpcBromide/NpcNmlCat16.png" alt="profile picture">
+            <div id="contentContainer">
+                <div id="homeSection">
+                    <h1 class="name contCenter">Annie Chen</h1>
+                    <div class="contCenter">
+                        <img src="/images/pfp.jpg" class="pfp" alt="profile picture">
+                    </div>
+                </div>
+    
+                <div class="hidden" id="aboutSection">
+                    <h1 class="name contCenter">About</h1>
+                    <div class="post">
+                        <p>
+                            Hi! My name is Annie Chen and I am currently studying Creative Media and Game Technologies 
+                            at the Rotterdam University of Applied Sciences.
+                        </p>
+                        <p>
+                            My hobbies includes playing videogames such as Animal Crossing, Pokémon and Genshin Impact. 
+                            Playing videogames has sparked my interest in creating my own game one day.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="hidden" id="skillsSection">
+                    <h1 class="name contCenter">Skills</h1>
+                    <div class="post">
+                        <p>HTML 5</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+    
+                        <p>CSS 3</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+    
+                        <p>JavaScript</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <p>TypeScript</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <p>React</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+    
+                        <p>PHP</p>
+                        <div class="progress progrBar">
+                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #B06270;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden" id="portfolioSection">
+                    <h1 class="name contCenter">Portfolio</h1>
+                    <div class="row align-items-start">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://pbs.twimg.com/media/EVMMyb6UcAArc1k.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            
+    
             <div class="contCenter">
                 <hr/>
             </div>
+
             <div>
-                <p class="contCenter post">Creative Media & Game Technologies</p>
+                <p class="contCenter subTitle">Creative Media & Game Technologies</p>
                 <!-- Navigation -->
                 <div class="contCenter">
                     <nav class="navbar">
                         <div class="row align-items-start">
-                            <div class="col navBtn">
+                            <!-- <div class="col navBtn">
                                 <a href="/">Home</a>
                             </div>
-                            <div class="col navBtn">
+                            <div class="col navBtn" id="aboutBtn">
                                 <a href="/about.html">About</a>
                             </div>
                             <div class="col navBtn">
@@ -43,7 +144,21 @@
                             </div>
                             <div class="col navBtn">
                                 <a href="#work">Work</a>
-                            </div>
+                            </div> -->
+
+                            <div class="col navBtn" id="homeBtn" onclick="changeContent(this.id)">
+                                <p class="buttons">home</p>
+                            </div> 
+                            <div class="col navBtn" id="aboutBtn" onclick="changeContent(this.id)">
+                                <p class="buttons">about</p>
+                            </div> 
+                             <div class="col navBtn" id="skillsBtn" onclick="changeContent(this.id)">
+                                <p class="buttons">skills</p>
+                            </div> 
+                            <div class="col navBtn" id="portfolioBtn" onclick="changeContent(this.id)">
+                                <p class="buttons">portfolio</p>
+                            </div> 
+
                           </div>
                     <nav>
                 </div>
@@ -66,5 +181,6 @@
         </div>
     </card>
 
+<script src="/js/app.js"></script>
 </body>
 </html>
