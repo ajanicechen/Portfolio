@@ -70,6 +70,11 @@ body{
     /* max-width: 500px; */
 }
 
+.portfolioCard{
+    
+    width: 18rem;
+}
+
 hr{
     width: 25%;
 }
