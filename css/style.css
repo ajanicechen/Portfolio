@@ -12,10 +12,6 @@ body{
     margin-top: 100px;
 } */
 
-.cardW500{
-    min-width: 500px;
-}
-
 #card{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.90);
@@ -58,7 +54,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin: 25px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -70,11 +66,12 @@ body{
     /* max-width: 500px; */
 }
 
-.portfolioGrid{
+#portfolioCardsContainer{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     justify-content: center;
     gap: 0.8rem;
+    margin: 25px 0;
 }
 
 hr{
@@ -168,7 +165,7 @@ hr{
         border: none;
     }
 
-    .portfolioGrid{
+    #portfolioCardsContainer{
         display: grid;
         grid-template-columns: repeat(1, 80%);
     }
@@ -177,7 +174,7 @@ hr{
 
 @media (min-width: 1025px) and (max-width: 1300px) {
     .contentCard{
-        width: 50%;
+        width: 80%;
     }
 
     .navbar{
@@ -188,9 +185,15 @@ hr{
         display: block;
     }
 
-    .portfolioGrid{
+    #portfolioCardsContainer{
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 80%);
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1700px) {
+    .contentCard{
+        width: 50%;
     }
 }

@@ -1,4 +1,4 @@
-window.addEventListener('load', createPortfolio)
+window.addEventListener('load', init)
 
 let projects = [
     {
@@ -63,12 +63,29 @@ let portfolioCardsContainer = document.getElementById('portfolioCardsContainer')
 
 let contentContainer = document.getElementById('contentContainer').children
 
+let portfolioCards
+
+function init(){
+    createPortfolio()
+
+    portfolioCards = document.getElementsByClassName("portfolioCards")
+    for (let i = 0; i < portfolioCards.length; i++){
+        portfolioCards[i].addEventListener("click", () => showDetails(i))
+    }
+    
+}
+
+function showDetails(project){
+    console.log(`${projects[project].name} card is clicked`)
+}
+
 function createPortfolio(){
 
     for (let project of projects){
         //create cards
         let card = document.createElement('div')
         card.classList.add('card')
+        card.classList.add('portfolioCards')
 
         let cardBody = document.createElement('div')
         cardBody.classList.add('card-body')
