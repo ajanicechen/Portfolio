@@ -70,9 +70,11 @@ body{
     /* max-width: 500px; */
 }
 
-.portfolioCard{
-    
-    width: 18rem;
+.portfolioGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    gap: 0.8rem;
 }
 
 hr{
@@ -166,11 +168,16 @@ hr{
         border: none;
     }
 
+    .portfolioGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 80%);
+    }
 }
+
 
 @media (min-width: 1025px) and (max-width: 1300px) {
     .contentCard{
-        width: 80%;
+        width: 50%;
     }
 
     .navbar{
@@ -179,5 +186,11 @@ hr{
 
     .navBtn{
         display: block;
+    }
+
+    .portfolioGrid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 80%);
     }
 }
