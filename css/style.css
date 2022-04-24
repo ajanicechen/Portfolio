@@ -130,6 +130,10 @@ hr{
     display: none;
 }
 
+.modal{
+    background-color:rgba(0,0,0,0.4);
+}
+
 .notHidden{
     display: block;
     transition: opacity 0.15s linear;
