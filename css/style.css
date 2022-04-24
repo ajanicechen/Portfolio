@@ -91,7 +91,6 @@ hr{
     background-color: transparent;
     border: 1px solid;
     border-radius: 50%;
-    /* opacity: 0.5; */
 }
 
 #btn-close:hover{
@@ -122,6 +121,27 @@ hr{
     cursor: pointer;
     transition: all 0.2s linear;
     text-align: center;
+}
+
+/* .inline{
+    position: relative;
+} */
+
+#homeIcon{
+    padding: 10px 10px;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    color: white;
+    background-color: #B06270;
+    border: 1px solid #B06270;
+    border-radius: 50%;
+}
+
+#homeIcon:hover{
+    cursor: pointer;
+    background-color: #e48a9a;
+    border-color: #e48a9a;
 }
 
 .contactIcon{

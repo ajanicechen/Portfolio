@@ -164,6 +164,7 @@ function changeContent(button_id){
     }
 
     switch(button_id){
+        case 'homeIcon' : homeSection.classList.remove('hidden') ; break ;
         case 'homeBtn' : homeSection.classList.remove('hidden') ; break ;
         case 'aboutBtn' : aboutSection.classList.remove('hidden') ; break ;
         case 'skillsBtn' : skillsSection.classList.remove('hidden') ; break ;
