@@ -22,7 +22,7 @@ body{
 }
 
 .contentCard{
-    width: 30%;
+    width: 40%;
     display: flex;
     margin-top: 5%;
 }
@@ -130,6 +130,12 @@ hr{
     margin-bottom: 10px;
 }
 
+.progressContainer{
+    text-align: center;
+    margin: 0 50px;
+    margin-bottom: 25px;
+}
+
 #progress-bar[value]{
     width: 100%;
     -webkit-appearance: none;
@@ -148,7 +154,7 @@ hr{
     box-shadow: 0 2px 5px rgba(88, 88, 88, 0.25) inset;
 }
 
-@media (min-width: 0) and (max-width: 1024px) {
+@media (min-width: 0) and (max-width: 1000px) {
     .contentCard{
         width: 100%;
     }
@@ -165,6 +171,12 @@ hr{
         border: none;
     }
 
+    .progressContainer{
+        text-align: center;
+        margin: 0 5px;
+        margin-bottom: 25px;
+    }
+
     #portfolioCardsContainer{
         display: grid;
         grid-template-columns: repeat(1, 80%);
@@ -172,9 +184,9 @@ hr{
 }
 
 
-@media (min-width: 1025px) and (max-width: 1300px) {
+@media (min-width: 1001px) and (max-width: 1300px) {
     .contentCard{
-        width: 80%;
+        width: 70%;
     }
 
     .navbar{
@@ -188,7 +200,7 @@ hr{
     #portfolioCardsContainer{
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1, 80%);
+        grid-template-columns: repeat(2, 40%);
     }
 }
 
