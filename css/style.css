@@ -68,9 +68,9 @@ body{
 
 #portfolioCardsContainer{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 45%);
     justify-content: center;
-    gap: 0.8rem;
+    gap: 1rem;
     margin: 25px 0;
 }
 
@@ -132,7 +132,10 @@ hr{
 
 .modal{
     background-color:rgba(0,0,0,0.4);
+    animation:opac 0.5s
 }
+
+@keyframes opac{from{opacity:0} to{opacity:1}}
 
 .notHidden{
     display: block;

@@ -103,7 +103,10 @@ async function init(){
 }
 
 function showDetails(project){
-    console.log(`${projects[project].name} card is clicked`)
+    // console.log(`${projects[project].name} card is clicked`)
+
+    modalImg = document.getElementById("modalImg")
+    modalImg.src = projects[project].image.screenshot
 
     modalTitle = document.getElementById("modalTitle")
     modalTitle.innerText = projects[project].name
@@ -111,8 +114,7 @@ function showDetails(project){
     modalDescription = document.getElementById("modalDescription")
     modalDescription.innerText = projects[project].description
 
-    modalImg = document.getElementById("modalImg")
-    modalImg.src = projects[project].image.screenshot
+
 
     // modalFooter = document.getElementById("modalFooter")
     // modalFooter.innerHTML = `<a src="${projects[project].url.app}">Try ${projects[project].name} right now</a>`
@@ -142,9 +144,6 @@ function createPortfolio(){
         let pImg = document.createElement('img')
         pImg.classList.add('card-img-top')
         pImg.src = project.image.banner
-
-        // let pDescription = document.createElement('p')
-        // pDescription.innerText = project.description
 
         //append cards to parent
         portfolioCardsContainer.appendChild(card)
