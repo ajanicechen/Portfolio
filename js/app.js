@@ -82,7 +82,7 @@ let modalImg
 let modalFooter
 
 
-async function init(){
+function init(){
     createPortfolio()
 
     portfolioCards = document.getElementsByClassName("portfolioCards")
