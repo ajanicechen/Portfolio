@@ -3,20 +3,24 @@ window.addEventListener('load', init)
 let projects = [
     {
         name: "Food Magazine",
-        image: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
-        description: "b",
-        url: 
-        { 
+        image: {
+                banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
+                screenshot: ""
+        },
+        description: "Food Mag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url: { 
             demo: "",
             app: ""
         }
     },
     {
         name: "Cattack to Attack",
-        image: "./images/cattack.png",
-        description: "b",
-        url: 
-        { 
+        image: {
+            banner: "./images/cattack.png",
+            screenshot: "./images/cattack_screenshot.png"
+        },
+        description: "Cattack Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url: { 
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
         }
@@ -24,10 +28,12 @@ let projects = [
     },
     {
         name: "HoloHome",
-        image: "./images/holohome.png",
-        description: "b",
-        url:     
-        { 
+        image: {
+            banner: "./images/holohome.png",
+            screenshot: ""
+        },
+        description: "HoloHome Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url:     { 
             demo: "https://youtu.be/2OChiWkDt5U",
             app: ""
         }
@@ -35,20 +41,24 @@ let projects = [
     },
     {
         name: "Rest:API",
-        image: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
-        description: "b",
-        url:    
-        { 
+        image: {
+            banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
+            screenshot: ""
+        },
+        description: "REST API Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url:    { 
             demo: "",
             app: ""
         }
     },
     {
         name: "Style Transfer",
-        image: "./images/styleTransfer.png",
-        description: "b",
-        url:    
-        { 
+        image: {
+            banner: "./images/styleTransfer.png",
+            screenshot: ""
+        },
+        description: "Style Transfer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url:    { 
             demo: "https://youtu.be/ewtF3Dbkyvo",
             app: "https://stud.hosted.hr.nl/0999525/PRG8-Week9/"
         }
@@ -64,8 +74,15 @@ let portfolioCardsContainer = document.getElementById('portfolioCardsContainer')
 let contentContainer = document.getElementById('contentContainer').children
 
 let portfolioCards
+let closeBtn
+let modal = document.getElementById("modal")
+let modalDescription
+let modalTitle
+let modalImg
+let modalFooter
 
-function init(){
+
+async function init(){
     createPortfolio()
 
     portfolioCards = document.getElementsByClassName("portfolioCards")
@@ -73,10 +90,38 @@ function init(){
         portfolioCards[i].addEventListener("click", () => showDetails(i))
     }
     
+    closeBtn = document.getElementById("btn-close")
+    closeBtn.addEventListener("click", () => hideContent())
+
+    // Dispatch DOMContentLoaded to activate Flowbite again
+
+    window.document.dispatchEvent(new Event("DOMContentLoaded", {
+    bubbles: true,
+    cancelable: true
+    }));
+
 }
 
 function showDetails(project){
     console.log(`${projects[project].name} card is clicked`)
+
+    modalTitle = document.getElementById("modalTitle")
+    modalTitle.innerText = projects[project].name
+
+    modalDescription = document.getElementById("modalDescription")
+    modalDescription.innerText = projects[project].description
+
+    modalImg = document.getElementById("modalImg")
+    modalImg.src = projects[project].image.screenshot
+
+    // modalFooter = document.getElementById("modalFooter")
+    // modalFooter.innerHTML = `<a src="${projects[project].url.app}">Try ${projects[project].name} right now</a>`
+    
+    modal.classList.add("notHidden")
+}
+
+function hideContent(){
+    modal.classList.remove("notHidden")
 }
 
 function createPortfolio(){
@@ -96,7 +141,7 @@ function createPortfolio(){
 
         let pImg = document.createElement('img')
         pImg.classList.add('card-img-top')
-        pImg.src = project.image
+        pImg.src = project.image.banner
 
         // let pDescription = document.createElement('p')
         // pDescription.innerText = project.description
