@@ -82,6 +82,25 @@ hr{
     width: 25%;
 }
 
+#btn-close{
+    box-sizing: content-box;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 5px 5px;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 50%;
+    /* opacity: 0.5; */
+}
+
+#btn-close:hover{
+    background-color: #B06270;
+    border-color: #B06270;
+    color: white;
+    transition: all 0.2s linear;
+}
+
 .navBtn{
     margin: 25px 10px;
     padding: 0 15px;
@@ -93,13 +112,6 @@ hr{
 .navBtn:hover{
     background-color: #e48a9a;
 }
-
-/* .navBtn a, .navBtn a:hover{
-    color: white;
-    padding: 5px 15px;
-    text-decoration: none;
-    text-transform: lowercase;
-} */
 
 .navBtn p, .navBtn p:hover{
     color: white;
@@ -132,7 +144,7 @@ hr{
 
 .modal{
     background-color:rgba(0,0,0,0.4);
-    animation:opac 0.5s
+    animation:opac 0.5s;
 }
 
 @keyframes opac{from{opacity:0} to{opacity:1}}
