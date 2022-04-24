@@ -4,8 +4,8 @@ let projects = [
     {
         name: "Food Magazine",
         image: {
-                banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
-                screenshot: ""
+                banner: "./images/magazine_banner.png",
+                screenshot: "./images/magazine_screenshot.png"
         },
         description: "Food Mag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         url: { 
@@ -16,7 +16,7 @@ let projects = [
     {
         name: "Cattack to Attack",
         image: {
-            banner: "./images/cattack.png",
+            banner: "./images/cattack_banner.png",
             screenshot: "./images/cattack_screenshot.png"
         },
         description: "Cattack Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -30,7 +30,7 @@ let projects = [
         name: "HoloHome",
         image: {
             banner: "./images/holohome.png",
-            screenshot: ""
+            screenshot: "./images/holohome_screenshot.png"
         },
         description: "HoloHome Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         url:     { 
@@ -54,8 +54,8 @@ let projects = [
     {
         name: "Style Transfer",
         image: {
-            banner: "./images/styleTransfer.png",
-            screenshot: ""
+            banner: "./images/s_transfer_banner.png",
+            screenshot: "./images/s_transfer_screenshot.png"
         },
         description: "Style Transfer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         url:    { 
