@@ -47,7 +47,7 @@ let projects = [
         },
         description: "REST API Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         url:    { 
-            demo: "",
+            demo: "https://www.youtube.com/shorts/lOf8LnFmU6Y",
             app: ""
         }
     },
@@ -73,7 +73,7 @@ let portfolioCardsContainer = document.getElementById('portfolioCardsContainer')
 
 let contentContainer = document.getElementById('contentContainer').children
 
-let portfolioCards
+let detailsBtn
 let closeBtn
 let modal = document.getElementById("modal")
 let modalDescription
@@ -85,9 +85,9 @@ let modalFooter
 function init(){
     createPortfolio()
 
-    portfolioCards = document.getElementsByClassName("portfolioCards")
-    for (let i = 0; i < portfolioCards.length; i++){
-        portfolioCards[i].addEventListener("click", () => showDetails(i))
+    detailsBtn = document.getElementsByClassName("detailBtn")
+    for (let i = 0; i < detailsBtn.length; i++){
+        detailsBtn[i].addEventListener("click", () => showDetails(i))
     }
     
     closeBtn = document.getElementById("btn-close")
@@ -134,22 +134,51 @@ function createPortfolio(){
         card.classList.add('card')
         card.classList.add('portfolioCards')
 
+        //card body
         let cardBody = document.createElement('div')
         cardBody.classList.add('card-body')
 
+        //title of project
         let pName = document.createElement('h5')
         pName.classList.add('card-title')
         pName.innerText = project.name
 
+        //project img banner
         let pImg = document.createElement('img')
         pImg.classList.add('card-img-top')
         pImg.src = project.image.banner
+
+        let externalBtnDiv = document.createElement('div')
+        // externalBtnDiv.classList.add('test')
+
+        //details button
+        let pDetail = document.createElement('a')
+        pDetail.innerText = "Detail"
+        pDetail.classList.add('externalBtn')
+        pDetail.classList.add('detailBtn')
+
+        //link to demo vid
+        let pDemo = document.createElement('a')
+        pDemo.href = project.url.demo
+        pDemo.innerText = "Demo"
+        pDemo.classList.add('externalBtn')
+
+        //link to app
+        let pApp = document.createElement('a')
+        pApp.href = project.url.app
+        pApp.innerText = "App"
+        pApp.classList.add('externalBtn')
+
 
         //append cards to parent
         portfolioCardsContainer.appendChild(card)
         card.appendChild(pImg)
         card.appendChild(cardBody)
         cardBody.appendChild(pName)
+        cardBody.appendChild(externalBtnDiv)
+        externalBtnDiv.appendChild(pDetail)
+        externalBtnDiv.appendChild(pDemo)
+        externalBtnDiv.appendChild(pApp)
         // cardBody.appendChild(pDescription)
         
     }
