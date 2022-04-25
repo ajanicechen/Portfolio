@@ -153,21 +153,27 @@ function createPortfolio(){
 
         //details button
         let pDetail = document.createElement('a')
-        pDetail.innerText = "Detail"
+        pDetail.innerText = "Details"
         pDetail.classList.add('externalBtn')
         pDetail.classList.add('detailBtn')
 
         //link to demo vid
         let pDemo = document.createElement('a')
         pDemo.href = project.url.demo
-        pDemo.innerText = "Demo"
+        pDemo.innerText = "Video"
         pDemo.classList.add('externalBtn')
+        if(project.url.demo == ""){
+            pDemo.classList.add('hidden')
+        }
 
         //link to app
         let pApp = document.createElement('a')
         pApp.href = project.url.app
         pApp.innerText = "App"
         pApp.classList.add('externalBtn')
+        if(project.url.app == ""){
+            pApp.classList.add('hidden')
+        }
 
 
         //append cards to parent
