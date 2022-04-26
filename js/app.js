@@ -40,7 +40,7 @@ let projects = [
 
     },
     {
-        name: "Rest:API",
+        name: "Animal Crossing Rest:API",
         image: {
             banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
             screenshot: ""
