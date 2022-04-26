@@ -160,6 +160,7 @@ function createPortfolio(){
         //link to demo vid
         let pDemo = document.createElement('a')
         pDemo.href = project.url.demo
+        pDemo.setAttribute('target', '_blank')
         pDemo.innerText = "Video"
         pDemo.classList.add('externalBtn')
         if(project.url.demo == ""){
@@ -169,6 +170,7 @@ function createPortfolio(){
         //link to app
         let pApp = document.createElement('a')
         pApp.href = project.url.app
+        pApp.setAttribute('target', '_blank')
         pApp.innerText = "App"
         pApp.classList.add('externalBtn')
         if(project.url.app == ""){
