@@ -14,18 +14,49 @@ let projects = [
         }
     },
     {
-        name: "Cattack to Attack",
+        name: "Hakizen's Commissions Form",
+        image: {
+            banner: "./images/hakizen_banner.png",
+            screenshot: "./images/hakizen_screenshot.png"
+        },
+        description: "CLE2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url: { 
+            demo: "https://www.youtube.com/watch?v=R6ib5uOazJ8",
+            app: ""
+        }
+
+    },
+
+    {
+        name: "Cattack to Protecc",
         image: {
             banner: "./images/cattack_banner.png",
             screenshot: "./images/cattack_screenshot.png"
         },
-        description: "Cattack Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:    "Protect The Acatemy of Wizardy Cats as Hocus The Cat from evil rats and mice sent by Demon Lord Uri! " + 
+                        "Use everything you learned at The Acatemy and fight until the very end!" +
+                        "Cattack to Protecc is a clickable webbrowser game I made in my first year. ", 
         url: { 
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
         }
 
     },
+
+    {
+        name: "Laravel CRUD",
+        image: {
+            banner: "./images/cattack_banner.png",
+            screenshot: "./images/cattack_screenshot.png"
+        },
+        description: "Laravel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        url: { 
+            demo: "",
+            app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
+        }
+
+    },
+    
     {
         name: "HoloHome",
         image: {
