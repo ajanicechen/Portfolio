@@ -2,31 +2,33 @@ window.addEventListener('load', init)
 
 let projects = [
     {
-        name: "Food Magazine",
-        image: {
-                banner: "./images/magazine_banner.png",
-                screenshot: "./images/magazine_screenshot.png"
-        },
-        description: "Food Mag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        url: { 
-            demo: "",
-            app: ""
-        }
-    },
-    {
         name: "Hakizen's Commissions Form",
         image: {
             banner: "./images/hakizen_banner.png",
             screenshot: "./images/hakizen_screenshot.png"
         },
-        description: "CLE2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:    "During this project I developed a reservationsystem for my good friend Mel/Hakizen. " + 
+                        "With this system, her Social Media followers could easily commission her by filling in and sumbitting the form. ",
+        tags: "Interviews, making wireframes and styleguide, build back-end and connecting it to database using PHP, build front-end using HTML, CSS and JavaScript, test product with target audience",
         url: { 
             demo: "https://www.youtube.com/watch?v=R6ib5uOazJ8",
             app: ""
         }
 
     },
-
+    // {
+    //     name: "Food Magazine",
+    //     image: {
+    //             banner: "./images/magazine_banner.png",
+    //             screenshot: "./images/magazine_screenshot.png"
+    //     },
+    //     description: "Food Mag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    //     tags: "Build back-end and front-end",
+    //     url: { 
+    //         demo: "",
+    //         app: ""
+    //     }
+    // },
     {
         name: "Cattack to Protecc",
         image: {
@@ -36,6 +38,7 @@ let projects = [
         description:    "Protect The Acatemy of Wizardy Cats as Hocus The Cat from evil rats and mice sent by Demon Lord Uri! " + 
                         "Use everything you learned at The Acatemy and fight until the very end!" +
                         "Cattack to Protecc is a clickable webbrowser game I made in my first year. ", 
+        tags: "Conceptualize, designing and drawing game sprites, program back-end and front-end (HTML, CSS and TypeScript)",
         url: { 
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
@@ -50,6 +53,7 @@ let projects = [
             screenshot: "./images/cattack_screenshot.png"
         },
         description: "Laravel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        tags: "Conceptualize, build back-end and connect to database using PHP/Laravel Framework, build front-end using HTML, Bootstrap/CSS and JavaScript",
         url: { 
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
@@ -63,7 +67,11 @@ let projects = [
             banner: "./images/holohome.png",
             screenshot: "./images/holohome_screenshot.png"
         },
-        description: "HoloHome Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:    "Bring concerts to your livingroom with HoloHome! With HoloHome its possible to view concerts of your favorite artists at home. " +
+                        "The product itsself consists of two components: the HoloHome application and the HoloCone. The HoloHome application is where you can browse for concerts, " +
+                        "add them to your favorites and view one. The HoloCone is a cone formed object that you can place on your device and projects the model of the artist in 3D. " +
+                        "As an agency, I worked With four other members for our client named ThunderBoom Records, a record company with AI-powerd music and artists.",
+        tags: "Conceptualize, interviewing target audience, making wireframes and a styleguide, building prototypes, testing prototypes, making character model using PMX Editor, editing choreography of model using MikuMikuDance, editing tutorial video using DavinciResolve",
         url:     { 
             demo: "https://youtu.be/2OChiWkDt5U",
             app: ""
@@ -145,10 +153,11 @@ function showDetails(project){
     modalDescription = document.getElementById("modalDescription")
     modalDescription.innerText = projects[project].description
 
-
-
-    // modalFooter = document.getElementById("modalFooter")
-    // modalFooter.innerHTML = `<a src="${projects[project].url.app}">Try ${projects[project].name} right now</a>`
+    modalFooter = document.getElementById("modalFooter")
+    modalFooter.innerText = `Tasks: ${projects[project].tags}`
+    // if(project.tags == "" || project.tags == undefined){
+    //     modalFooter.classList.add('hidden')
+    // }
     
     modal.classList.add("notHidden")
 }
