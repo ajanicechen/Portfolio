@@ -16,19 +16,6 @@ let projects = [
         }
 
     },
-    // {
-    //     name: "Food Magazine",
-    //     image: {
-    //             banner: "./images/magazine_banner.png",
-    //             screenshot: "./images/magazine_screenshot.png"
-    //     },
-    //     description: "Food Mag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //     tags: "Build back-end and front-end",
-    //     url: { 
-    //         demo: "",
-    //         app: ""
-    //     }
-    // },
     {
         name: "Cattack to Protecc",
         image: {
@@ -58,7 +45,6 @@ let projects = [
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
         }
-
     },
     
     {
@@ -76,7 +62,6 @@ let projects = [
             demo: "https://youtu.be/2OChiWkDt5U",
             app: ""
         }
-
     },
     {
         name: "Animal Crossing Rest:API",
@@ -84,7 +69,10 @@ let projects = [
             banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
             screenshot: ""
         },
-        description: "REST API Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:    "" +
+                        "" +
+                        "",
+        tags: "building prototypes, program back-end and connect to database (MongoDB and Postman), program front-end (HTML, CSS and React)",
         url:    { 
             demo: "https://www.youtube.com/shorts/lOf8LnFmU6Y",
             app: ""
@@ -96,7 +84,10 @@ let projects = [
             banner: "./images/s_transfer_banner.png",
             screenshot: "./images/s_transfer_screenshot.png"
         },
-        description: "Style Transfer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:    "With Neural Style Transfer, you can blend two images together: a content image and a style reference image. " +
+                        "The style reference image is with one of my own digital drawings and the content image is one the user provides by uploading. " +
+                        "Blending the two images together results in an output image that looks like the content image, but painted in the style of the style reference image. ",
+        tags: "Conceptualize, training AI, program back-end and front-end (HTML, CSS and JavaScript), building prototype, testing prototype",
         url:    { 
             demo: "https://youtu.be/ewtF3Dbkyvo",
             app: "https://stud.hosted.hr.nl/0999525/PRG8-Week9/"
