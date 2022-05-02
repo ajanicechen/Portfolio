@@ -2,19 +2,18 @@ window.addEventListener('load', init)
 
 let projects = [
     {
-        name: "Hakizen's Commissions Form",
+        name: "Hakizen's Commission Form",
         image: {
             banner: "./images/hakizen_banner.png",
             screenshot: "./images/hakizen_screenshot.png"
         },
         description:    "During this project I developed a reservationsystem for my good friend Mel/Hakizen. " + 
                         "With this system, her Social Media followers could easily commission her by filling in and sumbitting the form. ",
-        tags: "Interviews, making wireframes and styleguide, build back-end and connecting it to database using PHP, build front-end using HTML, CSS and JavaScript, test product with target audience",
+        tags: "Interviews, making wireframes and styleguide, build back-end and connecting it to database using PHP, build front-end using HTML, CSS and jS, test product with target audience",
         url: { 
             demo: "https://www.youtube.com/watch?v=R6ib5uOazJ8",
             app: ""
         }
-
     },
     {
         name: "Cattack to Protecc",
@@ -30,23 +29,20 @@ let projects = [
             demo: "",
             app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
         }
-
     },
-
-    {
-        name: "Laravel CRUD",
-        image: {
-            banner: "./images/cattack_banner.png",
-            screenshot: "./images/cattack_screenshot.png"
-        },
-        description: "Laravel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        tags: "Conceptualize, build back-end and connect to database using PHP/Laravel Framework, build front-end using HTML, Bootstrap/CSS and JavaScript",
-        url: { 
-            demo: "",
-            app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
-        }
-    },
-    
+    // {
+    //     name: "Laravel CRUD",
+    //     image: {
+    //         banner: "./images/cattack_banner.png",
+    //         screenshot: "./images/cattack_screenshot.png"
+    //     },
+    //     description: "Laravel Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    //     tags: "Conceptualize, build back-end and connect to database using PHP/Laravel Framework, build front-end using HTML, Bootstrap/CSS and JavaScript",
+    //     url: { 
+    //         demo: "",
+    //         app: "https://ajanicechen.github.io/Cattack-to-Protecc/"
+    //     }
+    // },
     {
         name: "HoloHome",
         image: {
@@ -63,21 +59,21 @@ let projects = [
             app: ""
         }
     },
-    {
-        name: "Animal Crossing Rest:API",
-        image: {
-            banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
-            screenshot: ""
-        },
-        description:    "" +
-                        "" +
-                        "",
-        tags: "building prototypes, program back-end and connect to database (MongoDB and Postman), program front-end (HTML, CSS and React)",
-        url:    { 
-            demo: "https://www.youtube.com/shorts/lOf8LnFmU6Y",
-            app: ""
-        }
-    },
+    // {
+    //     name: "Animal Crossing API",
+    //     image: {
+    //         banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
+    //         screenshot: "./images/acnh_api_screenshot.png"
+    //     },
+    //     description:    "Using MongoDB and Postman, I build an Animal Crossing Villagers API. " +
+    //                     "" +
+    //                     "",
+    //     tags: "building prototypes, program back-end and connect to database (MongoDB and Postman), program front-end (HTML, CSS and React)",
+    //     url:    { 
+    //         demo: "https://www.youtube.com/shorts/lOf8LnFmU6Y",
+    //         app: ""
+    //     }
+    // },
     {
         name: "Style Transfer",
         image: {
@@ -86,8 +82,8 @@ let projects = [
         },
         description:    "With Neural Style Transfer, you can blend two images together: a content image and a style reference image. " +
                         "The style reference image is with one of my own digital drawings and the content image is one the user provides by uploading. " +
-                        "Blending the two images together results in an output image that looks like the content image, but painted in the style of the style reference image. ",
-        tags: "Conceptualize, training AI, program back-end and front-end (HTML, CSS and JavaScript), building prototype, testing prototype",
+                        "Blending the two images together results in an output image that looks like the content image, but painted in the style of the reference image. ",
+        tags: "Conceptualize, training AI, program back-end and front-end (HTML, CSS and jS), building prototype, testing prototype",
         url:    { 
             demo: "https://youtu.be/ewtF3Dbkyvo",
             app: "https://stud.hosted.hr.nl/0999525/PRG8-Week9/"
@@ -95,12 +91,13 @@ let projects = [
     }
 ]
 
+//all sections
 let homeSection = document.getElementById('homeSection')
 let aboutSection = document.getElementById('aboutSection')
 let skillsSection = document.getElementById('skillsSection')
 let portfolioSection = document.getElementById('portfolioSection')
-let portfolioCardsContainer = document.getElementById('portfolioCardsContainer')
 
+let portfolioCardsContainer = document.getElementById('portfolioCardsContainer')
 let contentContainer = document.getElementById('contentContainer').children
 
 let detailsBtn
@@ -111,7 +108,7 @@ let modalTitle
 let modalImg
 let modalFooter
 
-
+//initialize on load of webpage
 function init(){
     createPortfolio()
 
@@ -120,39 +117,36 @@ function init(){
         detailsBtn[i].addEventListener("click", () => showDetails(i))
     }
     
+    //hide content when you click on btn-close
     closeBtn = document.getElementById("btn-close")
     closeBtn.addEventListener("click", () => hideContent())
-
-    // Dispatch DOMContentLoaded to activate Flowbite again
-
-    window.document.dispatchEvent(new Event("DOMContentLoaded", {
-    bubbles: true,
-    cancelable: true
-    }));
-
 }
 
+//shows detail in a modal
 function showDetails(project){
     // console.log(`${projects[project].name} card is clicked`)
 
+    //project image
     modalImg = document.getElementById("modalImg")
     modalImg.src = projects[project].image.screenshot
 
+    //project title
     modalTitle = document.getElementById("modalTitle")
     modalTitle.innerText = projects[project].name
 
+    //project description
     modalDescription = document.getElementById("modalDescription")
     modalDescription.innerText = projects[project].description
 
+    //project tags/tasks
     modalFooter = document.getElementById("modalFooter")
     modalFooter.innerText = `Tasks: ${projects[project].tags}`
-    // if(project.tags == "" || project.tags == undefined){
-    //     modalFooter.classList.add('hidden')
-    // }
     
+    //content is default hidden, so add new class to display block
     modal.classList.add("notHidden")
 }
 
+//remobes the not hidden class to hide content
 function hideContent(){
     modal.classList.remove("notHidden")
 }
@@ -208,7 +202,6 @@ function createPortfolio(){
             pApp.classList.add('hidden')
         }
 
-
         //append cards to parent
         portfolioCardsContainer.appendChild(card)
         card.appendChild(pImg)
@@ -218,8 +211,6 @@ function createPortfolio(){
         externalBtnDiv.appendChild(pDetail)
         externalBtnDiv.appendChild(pDemo)
         externalBtnDiv.appendChild(pApp)
-        // cardBody.appendChild(pDescription)
-        
     }
 }
 
@@ -237,6 +228,5 @@ function changeContent(button_id){
         case 'aboutBtn' : aboutSection.classList.remove('hidden') ; break ;
         case 'skillsBtn' : skillsSection.classList.remove('hidden') ; break ;
         case 'portfolioBtn' : portfolioSection.classList.remove('hidden') ; break ;
-
     }
 }
