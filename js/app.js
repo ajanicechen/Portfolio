@@ -49,9 +49,9 @@ let projects = [
             banner: "./images/holohome.png",
             screenshot: "./images/holohome_screenshot.png"
         },
-        description:    "Bring concerts to your livingroom with HoloHome! With HoloHome its possible to view concerts of your favorite artists at home. " +
+        description:    "Bring concerts to your livingroom with HoloHome! With HoloHome it's possible to view concerts of your favorite artists at home. " +
                         "The product itsself consists of two components: the HoloHome application and the HoloCone. The HoloHome application is where you can browse for concerts, " +
-                        "add them to your favorites and view one. The HoloCone is a cone formed object that you can place on your device and projects the model of the artist in 3D. " +
+                        "add them to your favorites and view. The HoloCone is a cone formed object that you can place on your device. It will project the model of the artist in 3D into your living room. " +
                         "As an agency, I worked With four other members for our client named ThunderBoom Records, a record company with AI-powerd music and artists.",
         tags: "Conceptualize, interviewing target audience, making wireframes and a styleguide, building prototypes, testing prototypes, making character model using PMX Editor, editing choreography of model using MikuMikuDance, editing tutorial video using DavinciResolve",
         url:     { 
