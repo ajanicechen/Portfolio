@@ -8,7 +8,8 @@ let projects = [
             screenshot: "./images/hakizen_screenshot.png"
         },
         description:    "During this project I developed a reservationsystem for my good friend Mel/Hakizen. " + 
-                        "With this system, her Social Media followers could easily commission her by filling in and sumbitting the form. ",
+                        "With this system, her Social Media followers could easily commission her by sumbitting a form. "+
+                        "For this project I was in charge of designing and developing the website as well as target audience research and testing the product. ",
         tags: "Interviews, making wireframes and styleguide, build back-end and connecting it to database using PHP, build front-end using HTML, CSS and jS, test product with target audience",
         url: { 
             demo: "https://www.youtube.com/watch?v=R6ib5uOazJ8",
@@ -22,8 +23,9 @@ let projects = [
             screenshot: "./images/cattack_screenshot.png"
         },
         description:    "Protect The Acatemy of Wizardy Cats as Hocus The Cat from evil rats and mice sent by Demon Lord Uri! " + 
-                        "Use everything you learned at The Acatemy and fight until the very end!" +
-                        "Cattack to Protecc is a clickable webbrowser game I made in my first year. ", 
+                        "Use everything you learned at The Acatemy and fight until the very end! " +
+                        "Cattack to Protecc is a clickable webbrowser game I made in my first year. " +
+                        "For this project I was in charge of desiging and developing the game. ", 
         tags: "Conceptualize, designing and drawing game sprites, program back-end and front-end (HTML, CSS and TypeScript)",
         url: { 
             demo: "",
@@ -52,7 +54,8 @@ let projects = [
         description:    "Bring concerts to your livingroom with HoloHome! With HoloHome it's possible to view concerts of your favorite artists at home. " +
                         "The product itsself consists of two components: the HoloHome application and the HoloCone. The HoloHome application is where you can browse for concerts, " +
                         "add them to your favorites and view. The HoloCone is a cone formed object that you can place on your device. It will project the model of the artist in 3D into your living room. " +
-                        "As an agency, I worked With four other members for our client named ThunderBoom Records, a record company with AI-powerd music and artists.",
+                        "As an agency, I worked With four other members for our client named ThunderBoom Records, a record company with AI-powerd music and artists. " +
+                        "In this project I was in charge of wireframes, creating a charatcer, making placeholder content as example, video editing and front-end development. ",
         tags: "Conceptualize, interviewing target audience, making wireframes and a styleguide, building prototypes, testing prototypes, making character model using PMX Editor, editing choreography of model using MikuMikuDance, editing tutorial video using DavinciResolve",
         url:     { 
             demo: "https://youtu.be/2OChiWkDt5U",
@@ -186,8 +189,9 @@ function createPortfolio(){
         let pDemo = document.createElement('a')
         pDemo.href = project.url.demo
         pDemo.setAttribute('target', '_blank')
-        pDemo.innerText = "Video"
+        pDemo.innerText = "Showcase"
         pDemo.classList.add('externalBtn')
+        //url may not exist, hide the button
         if(project.url.demo == ""){
             pDemo.classList.add('hidden')
         }
@@ -198,6 +202,7 @@ function createPortfolio(){
         pApp.setAttribute('target', '_blank')
         pApp.innerText = "App"
         pApp.classList.add('externalBtn')
+        //url may not exist, hide the button
         if(project.url.app == ""){
             pApp.classList.add('hidden')
         }
