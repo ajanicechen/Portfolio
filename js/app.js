@@ -62,21 +62,6 @@ let projects = [
             app: ""
         }
     },
-    // {
-    //     name: "Animal Crossing API",
-    //     image: {
-    //         banner: "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/05/acnh-best-villagers.jpg",
-    //         screenshot: "./images/acnh_api_screenshot.png"
-    //     },
-    //     description:    "Using MongoDB and Postman, I build an Animal Crossing Villagers API. " +
-    //                     "" +
-    //                     "",
-    //     tags: "building prototypes, program back-end and connect to database (MongoDB and Postman), program front-end (HTML, CSS and React)",
-    //     url:    { 
-    //         demo: "https://www.youtube.com/shorts/lOf8LnFmU6Y",
-    //         app: ""
-    //     }
-    // },
     {
         name: "Style Transfer",
         image: {
@@ -90,6 +75,21 @@ let projects = [
         url:    { 
             demo: "https://youtu.be/ewtF3Dbkyvo",
             app: "https://stud.hosted.hr.nl/0999525/PRG8-Week9/"
+        }
+    },
+    {
+        name: "EGR Planner",
+        image: {
+            banner: "./images/egr_banner.jpeg",
+            screenshot: "./images/egr_screenshot.jpeg"
+        },
+        description:    "EGR Planner is an application which aims to make traveling more sustainable by providing insight on how much a means of transport emits while traveling. " +
+                        "With this application, we were hoping to make people think twice about the effects of their choice of transport, making the most green option. " +
+                        "In this project I was in charge of wireframes, target audience research, pitching, filming and video editing.",
+        tags: "Conceptualize, making wireframes, building prototypes, target audience research, React-Native, Expo-API",
+        url:    { 
+            demo: "https://youtu.be/glpZ20-gevA",
+            app: ""
         }
     }
 ]
